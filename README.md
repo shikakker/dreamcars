@@ -1,21 +1,28 @@
-# dreamcars
-dreamcars ui
+# Dreamcars UI Motion
 
+UI and motion-design assets for Dreamcars, a luxury car-rental application for iOS and Android.
 
-App catalog cars design for <a href="https://Dreamcars4rent.com" rel="nofollow noreferrer">Dreamcars App</a> 
+## Repository contents
 
-Dreamcars ‎— Feel the luxury in motion!
-RENT A CAR IOS/ANDROID APP
+- Loader and transition studies.
+- Adobe After Effects source files.
+- JSON animation exports and HTML previews.
+- Supporting product and brand references.
 
-​​​​​​​<a href="https://www.behance.net/gallery/89898061/Dreamcars-rent-a-car-Product" rel="nofollow noreferrer">more info</a>
+## Preview locally
 
-<a href="https://Dreamcars4rent.com" rel="nofollow noreferrer">dreamcars4rent.com</a>
+```bash
+python -m http.server 8000
+```
 
-<a href="https://apple.co/34LRCua" rel="nofollow noreferrer"> Apple ios app</a>
+Open `demo.html` or `loader)/demo.html` in a browser.
 
-Yhanks for watching!
+## Project links
 
-other projects:
-<a href="https://www.behance.net/shikakker" rel="nofollow noreferrer">Behance</a>
+- [Dreamcars product case on Behance](https://www.behance.net/gallery/89898061/Dreamcars-rent-a-car-Product)
+- [Dreamcars website](https://Dreamcars4rent.com)
+- [iOS app](https://apple.co/34LRCua)
 
-<a href="https://whoisegor.ru" rel="nofollow noreferrer">Whoisegor.ru</a>
+## Status
+
+Archived product-design and motion case. The repository contains presentation and animation assets rather than the full mobile application.
