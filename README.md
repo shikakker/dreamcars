@@ -1,99 +1,68 @@
-# Dreamcars — Luxury Car Rental Product Design Archive
+# Dreamcars — luxury car rental product-design archive
 
-Historical product / UI design archive for **Dreamcars**, a luxury-car rental experience designed for iOS / Android.
+Historical product/UI and motion-design materials for **Dreamcars**, a luxury-car rental experience designed for mobile.
 
-The repository preserves a large exported demo page, JSON data, and motion-design source for a loader animation. It is **not the source code of the native Dreamcars mobile application**.
+This repository does **not** contain the native iOS or Android application source. It preserves presentation and motion artifacts and now includes a small authored portfolio viewer around them.
 
-## Project context
+## View the case
 
-The original product positioning was:
+Serve the repository over HTTP:
 
-```text
-Dreamcars — Feel the luxury in motion!
-Rent a car iOS / Android app
+```bash
+python -m http.server 8000
 ```
 
-Historical references from the previous README:
+Open `http://localhost:8000/`.
+
+The portfolio viewer provides an interactive preview of the preserved loader animation, playback controls, reduced-motion-aware behavior, and an opt-in sandboxed view of the original generated demo.
+
+## Preserved historical artifacts
 
 ```text
-https://dreamcars4rent.com
-https://www.behance.net/gallery/89898061/Dreamcars-rent-a-car-Product
+demo.html       generated product/design presentation
+demo.json       animation/export data
+loader.aep      Adobe After Effects loader source
+loader)/        historical loader-related exports
 ```
 
-An old Apple App Store short link was also listed in the previous README. Treat all historical external links as archival until independently confirmed to still resolve to the intended product.
+These files remain the historical source artifacts. The modern viewer does not replace them.
 
-## What this repository contains
+## Portfolio layer
 
 ```text
-demo.html       large exported product / design demo
-demo.json       accompanying exported data
-loader.aep      Adobe After Effects source for loader motion
-loader)/        loader-related exported assets
-README.md
+index.html            authored case-study entry
+assets/case.css       responsive presentation
+assets/case.js        loader and legacy-demo controls
+scripts/validate.mjs  artifact/Lottie validation
+.github/workflows/    automated repository checks
 ```
 
-There is no Android Studio project, Xcode project, React Native package, Flutter project, or native mobile application source in the current repository.
+## Verified scope
 
-## Role / portfolio boundary
+The checkout supports claims around product/UI design, interaction/motion work, After Effects source artifacts and browser-oriented animation handoff. There is no Xcode project, Android Studio project, Flutter project, React Native package, backend or database in this repository.
 
-This repository is strongest as evidence of **product design, UI, interaction, and motion work** around a luxury-car rental product.
+Accordingly, this repository should not be used as evidence that the native Dreamcars application was engineered here.
 
-Do not describe the repository itself as proof that the native iOS / Android application was engineered here unless corresponding application source is added separately.
+## Historical positioning
 
-## Design areas represented
+The previous project materials described Dreamcars as a luxury-car rental experience for iOS/Android. Historical links referenced `dreamcars4rent.com` and a Behance case. Those links are archival references and should be independently verified before reuse in current portfolio materials.
 
-The broader Dreamcars case can be positioned around product-design problems such as:
+## Validation
 
-- premium vehicle catalog presentation;
-- visual hierarchy for high-value inventory;
-- mobile-first browsing;
-- car detail / selection experience;
-- rental conversion flow;
-- luxury-brand visual language;
-- loading / transition motion;
-- product presentation for App Store / portfolio materials.
+Requires Node 20+ and no npm dependencies:
 
-Exact screens and flows should be described from the actual case-study assets rather than inferred from the repository filename alone.
-
-## Motion design
-
-`loader.aep` preserves the Adobe After Effects source for a product-loader / transition experiment.
-
-That is useful portfolio evidence of interaction / motion work, but `.aep` is a binary authoring file and cannot be meaningfully diffed through Git.
-
-For easier review, a polished portfolio repository could additionally include:
-
-- rendered MP4 / WebM preview;
-- GIF / animated WebP preview;
-- still frames;
-- short explanation of where the loader appears in the product flow.
-
-## Exported demo
-
-`demo.html` is a large static export rather than a maintainable application codebase.
-
-It can be useful for visual reference, but future portfolio work is better served by source screenshots / design-system documentation or a lightweight intentionally authored case-study page instead of relying on a 260 KB generated HTML export.
-
-## Historical links
-
-Behance profile:
-
-```text
-https://www.behance.net/shikakker
+```bash
+npm test
 ```
 
-Current personal-site family:
+The check verifies that the original After Effects, HTML and JSON artifacts still exist, parses `demo.json` as Lottie-style animation data, validates core frame/layer metadata and checks that the new historical-demo iframe remains sandboxed.
 
-```text
-https://whoisegor.ru
-```
-
-Verify public links before publishing them in a current CV / portfolio.
+GitHub Actions runs the same validation on pushes and pull requests.
 
 ## Current status
 
-**Historical product-design / motion archive.** The repository preserves exported presentation assets and an After Effects loader source for Dreamcars. It should be presented as design work, not as the source repository for a full native rental application.
+**Portfolio-ready historical product-design/motion archive.** Original artifacts are preserved alongside a maintainable static presentation layer for review.
 
 ## License
 
-No repository-wide software or media license is assumed by this README. Vehicle photography, logos, fonts, UI assets, and After Effects source may have separate rights / client-use constraints; verify before redistribution.
+No repository-wide software or media license is assumed. Vehicle photography, logos, fonts, UI assets, generated runtime material and After Effects source may have separate ownership or redistribution constraints.
